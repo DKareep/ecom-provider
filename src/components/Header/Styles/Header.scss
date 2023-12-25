@@ -1,0 +1,59 @@
+.header-wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 2rem;
+
+  .nav-items {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    li {
+
+    }
+
+  }
+}
+
+.responsive_nav {
+
+}
+
+.toggler {
+  display: flex;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.open-nav {
+
+}
+
+.close-nav {
+
+}
+
+@media screen and (max-width: 400px) {
+  .toggler {
+    display: none;
+  }
+  .toggler-switch {
+    position: fixed;
+    right: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .toggle-btn {
+    display: block;
+  }
+}
+
+.link-unset {
+  text-decoration: none;
+}
