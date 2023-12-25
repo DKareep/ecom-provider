@@ -1,5 +1,4 @@
 import {SET_PRODUCTS_ERROR, SET_PRODUCTS_LOADING, STORE_PRODUCTS} from "../utils/Constants";
-import products from "../pages/Products/Products";
 
 const productsInitialState = {
     loadingProducts: false,
