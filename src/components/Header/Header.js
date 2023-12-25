@@ -8,7 +8,7 @@ const Header = () => {
     const [openNav, setOpenNav] = useState(false)
     return (
         <header className={"header-wrapper"}>
-            <h3>Dyntra</h3>
+            <Link className={"link-unset"} to={"/"}><h3>Dyntra</h3></Link>
             <button className={"toggle-btn"} onClick={() => setOpenNav(!openNav)}>{openNav ? "open" : "close"}</button>
             <nav className={`toggler ${openNav && 'toggler-switch'}`}>
                 <ul className={"nav-items"}>
