@@ -34,7 +34,7 @@ const ProductsProvider = ({children}) => {
             const response = await axios.get(`${PRODUCTSURL}/${id}`)
             dispatch({type: STORE_PRODUCT_DETAILS, payload: response.data})
         } catch (e) {
-            console.log(e)
+
             dispatch({type: SET_PRODUCT_DETAILS_ERROR})
         }
     }, [])
