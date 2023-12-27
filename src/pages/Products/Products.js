@@ -56,9 +56,10 @@ const Products = () => {
                     <form onSubmit={(e) => e.preventDefault()}>
 
                         <div>
-                            <label htmlFor="">Search</label>
+                            <label htmlFor={"search"}>Search</label>
                             <br/>
                             <input type="text"
+                                   id={"search"}
                                    name={"search"}
                                    value={search}
                                    onChange={updateFilters}
@@ -77,6 +78,7 @@ const Products = () => {
                         {categoryItem}</button>)}
                     <h3>Company</h3>
                     {companies.map(companyItem => <button
+                        key={companyItem}
                         value={companyItem}
                         onClick={updateFilters}
                         name={"company"}
@@ -122,7 +124,7 @@ const Products = () => {
                     <label htmlFor="shipping">Free shipping</label>
                     <input id={"shipping"} type="checkbox"
                            name={"free_shipping"}
-                           onClick={updateFilters}
+                           onChange={updateFilters}
                            checked={free_shipping}/>
 
 
@@ -148,7 +150,7 @@ const Products = () => {
 
                         <div className="sort-container">
                             <form action="">
-                                <label htmlFor="sort">Sort by</label>
+                                <label htmlFor="sort-dropdown">Sort by</label>
                                 <select name="sort" id="sort-dropdown" value={sort} onChange={updateSort}>
                                     <option value="price-lowest">Price Lowest</option>
                                     <option value="price-highest">Price Highest</option>

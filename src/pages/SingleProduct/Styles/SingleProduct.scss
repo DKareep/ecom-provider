@@ -1,10 +1,37 @@
-.product-details{
+.product-details {
   display: flex;
   margin: 0 auto;
-gap: 20px;
+  gap: 20px;
   width: 80%;
-  img{
+
+  img {
     width: 400px;
     height: 300px;
   }
+
+  ul {
+    padding: 0;
+
+    li {
+      margin: 0 5px;
+      display: inline-block;
+
+      .product-color {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+
+        svg {
+          height: 20px;
+          width: 20px;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+        }
+
+      }
+    }
+  }
+
 }
