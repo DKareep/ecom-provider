@@ -1,11 +1,11 @@
-import "./Styles/Footer.scss"
+import "./Styles/Footer.scss";
 
 const Footer = () => {
-    return (
-        <footer className={"footer-wrapper"}>
-            <p>All rights reserved {new Date().getFullYear()}</p>
-        </footer>
-    )
-}
+  return (
+    <footer className={"footer-wrapper"}>
+      <p>&copy; All rights reserved {new Date().getFullYear()}</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

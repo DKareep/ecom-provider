@@ -1,5 +1,5 @@
 .header-wrapper {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
 
@@ -7,19 +7,16 @@
 
   .nav-items {
     display: flex;
-    width: 300px;
+    width: 200px;
     justify-content: space-evenly;
     list-style-type: none;
 
     li {
-
     }
-
   }
 }
 
 .responsive_nav {
-
 }
 
 .toggler {
@@ -31,11 +28,9 @@
 }
 
 .open-nav {
-
 }
 
 .close-nav {
-
 }
 
 @media screen and (max-width: 400px) {

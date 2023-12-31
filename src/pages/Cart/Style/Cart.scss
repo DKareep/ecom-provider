@@ -11,10 +11,8 @@
     column-gap: 3rem;
     row-gap: 3rem;
 
-
     @media screen and (max-width: 970px) {
       display: none;
-
     }
     hr {
       width: 100%;
@@ -29,7 +27,6 @@
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     column-gap: 3rem;
     row-gap: 3rem;
-
 
     .cart-item-basic-details {
       display: flex;
@@ -52,39 +49,33 @@
         }
 
         div {
-
-
           .colors-text {
             color: darkgrey;
-            font-size: .8rem;
+            font-size: 0.8rem;
           }
-
 
           .cart-item-color {
             height: 20px;
             width: 20px;
             border-radius: 50%;
           }
-
-
         }
-
       }
     }
 
     .cart-price {
-
     }
 
     .cart-quantity {
-
     }
 
     .cart-subtotal {
-
     }
-
-
+    .cart-delete-item {
+      .trash-icon {
+        cursor: pointer;
+      }
+    }
   }
 
   .cart-bottom-btns {
@@ -101,7 +92,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    hr{
+    hr {
       width: 80%;
     }
   }

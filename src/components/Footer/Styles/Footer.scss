@@ -1,8 +1,11 @@
-.footer-wrapper{
+.footer-wrapper {
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 40px;
   width: 100%;
   background-color: black;
   color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.8rem;
 }
